@@ -1,0 +1,31 @@
+en:
+  - school: "University of Michigan - Ann Arbor"
+    program: M.S.E. in Computer Science and Engineering
+    graduation_date: Dec. 2024
+    description:
+    points:
+      - Graudate student instructor for Database Management Systems course (EECS 484)
+      - "GPA: 4.00 / 4.00"
+
+  - school: "University of Michigan - Ann Arbor"
+    program: B.S.E. in Computer Science
+    graduation_date: Dec. 2020
+    description:
+    points:
+      - "Summa Cum Laude, GPA: 3.78 / 4.00"
+
+kr:
+  - school: 미시간 대학 (University of Michigan - Ann Arbor)
+    program: 컴퓨터과학 석사
+    graduation_date: 2024/12
+    description:
+    points:
+      - 데이터베이스 수업 (EECS 484) 조교
+      - "GPA: 4.00 / 4.00"
+
+  - school: 미시간 대학 (University of Michigan - Ann Arbor)
+    program: 컴퓨터과학 학사
+    graduation_date: 2020/12
+    description:
+    points:
+      - "GPA: 3.78 / 4.00"

@@ -1,0 +1,41 @@
+<div class="experience-container">
+  {% for experience in site.data.experience[page.lang] %}
+  <div class="experience-tile">
+    <div class="tile-header">
+      <img
+        src="{{ experience.logo }}"
+        alt="{{ experience.company_name }} logo"
+        class="company-logo"
+      />
+      <div class="tile-header-text">
+        <h2 class="company-name">{{ experience.company_name }}</h2>
+        <p class="duration">{{ experience.duration }}</p>
+      </div>
+    </div>
+    <h3>{{ experience.title }}</h3>
+    <p class="experience-description">{{ experience.description }}</p>
+    <div class="achievements">
+      {% for achievement in experience.achievements %}
+      <!-- -->
+      {% if achievement.subheading and achievement.link %}
+      <h4 class="achievement-subheading">
+        <a href="{{achievement.link}}">{{ achievement.subheading }}</a>
+      </h4>
+      {% else if achievement.subheading %}
+      <h4 class="achievement-subheading">{{ achievement.subheading }}</h4>
+      {% endif %}
+      <ul>
+        {% for item in achievement.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+    <div class="skills">
+      {% for skill in experience.skills %}
+      <span class="skill">{{ skill }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

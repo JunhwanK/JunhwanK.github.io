@@ -1,0 +1,43 @@
+<!-- add latex rendering -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script
+  type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+></script>
+
+<!-- auto-increment figure number & reference by figure id -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Auto-increment figure number and update caption
+    let figures = document.querySelectorAll("figure");
+    figures.forEach((fig, index) => {
+      let caption = fig.querySelector("figcaption");
+      let number = index + 1; // Adjusting index to start from 1
+      fig.dataset.figureNumber = number; // Store it in a data attribute
+
+      if (caption) {
+        caption.innerHTML = `Fig. ${number}: ` + caption.innerHTML;
+      }
+    });
+
+    // Replace references in text
+    document.querySelectorAll("span[data-figure-ref]").forEach((span) => {
+      let figId = span.dataset.figureRef; // Get the figure ID from the data attribute
+      let fig = document.getElementById(figId); // Find the corresponding figure
+
+      if (fig) {
+        // Update the text reference
+        span.innerText = `Fig. ${fig.dataset.figureNumber}`;
+      } else {
+        span.innerText = `Fig. NaN`;
+      }
+    });
+  });
+</script>

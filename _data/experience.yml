@@ -1,0 +1,69 @@
+en:
+  - company_name: "Center for Army Analysis and Simulation"
+    logo: "/assets/images/ROKA.jpg"
+    duration: "Nov. 2022 - Mar. 2024, Gyeryong, South Korea"
+    title: "Machine Learning Engineer"
+    description: "Worked as the main engineer in the following three projects."
+    achievements:
+      - subheading: LSTM-based Classifier for Counter-Battery Radars
+        link: /en/projects/#ballistic-projectile
+        items:
+          - "Achieved 94.3% accuracy and 0.85 F1-score on real-world data collected by counter-battery radars."
+          - Patent granted (10-2641022-0000) in Korea as property of the Republic of Korea Army.
+      - subheading: Real-time Object Detection Surveillance Software
+        link: /en/projects/#roka-surveillance
+        items:
+          - Prototyped surveillance software by fine-tuning and adding UI to an object detection neural network.
+          - Increased frame throughput by 60% using multi-threading and multi-processing.
+          - Deployed the software across six army bases for user testing.
+      - subheading: Military Object Detection Dataset Distillation
+        items:
+          - Reduced dataset size by 60.4% while maintaining model performance.
+          - Utilized Annoy, an approximate nearest neighbor library, to speed up distillation by 99%.
+    skills: ["Computer Vision", "Patent", "PyTorch", "PyQt", "UI/UX", "Python"]
+
+  - company_name: "University of Michigan"
+    logo: "/assets/images/UofM.jfif"
+    duration: "Jan. 2021 - Dec. 2021, Ann Arbor, MI, USA"
+    title: "Graduate Student Instructor"
+    description: "Led a team of undergraduate assistants to manage a course with over 250 students per semester."
+    achievements:
+      - items:
+          - Conducted 50+ hours of group discussion, reviewing ER diagrams, SQL, JDBC, normalization, indexing, etc.
+          - Held 150+ office hours, helping students debug project code in SQL, Java, JavaScript, and C++.
+    skills: ["Team Management", "SQL", "Java", "Javascript", "C++"]
+
+kr:
+  - company_name: "육군 분석평가단"
+    logo: "/assets/images/ROKA.jpg"
+    duration: "2022/11 - 2024/03, 계룡, 한국"
+    title: "빅데이터기술 연구병"
+    description: "다음 프로젝트의 주요 개발를 맡음."
+    achievements:
+      - subheading: LSTM 기반 대포병탐지레이더 표적분류
+        link: /kr/projects/#ballistic-projectile
+        items:
+          - "실제 포탄사격 데이터에서 94.3% 정확도와 0.85 F1 점수를 달성."
+          - "특허 등록번호: 10-2641022."
+      - subheading: 실시간 객체탐지 경계 시스템
+        link: /kr/projects/#roka-surveillance
+        items:
+          - 군용 데이터를 학습한 객체탐지 모델에 UI와 경계기능을 추가. 6개의 후방부대에 시험적용.
+          - 멀티스레딩 및 멀티프로세싱을 활용하여 초당 프레임 처리량을 60% 증가.
+      - subheading: 객체탐지 데이터셋 품질향상
+        items:
+          - 모델 성능을 유지하면서 데이터셋 크기를 60.4% 감소.
+          - Approximate nearest-neighbor 탐색을 활용하여 데이터 정제 속도를 99% 향상.
+    skills:
+      ["SW 개발", "논문 구현", "특허", "PyTorch", "PyQt", "UI/UX", "Python"]
+
+  - company_name: "미시간 대학"
+    logo: "/assets/images/UofM.jfif"
+    duration: "2021/01 - 2021/12, 앤아버, 미국"
+    title: "데이터베이스 수업 조교"
+    description: "매학기 250여명의 학생이 수강하는 수업을 원활하게 운영."
+    achievements:
+      - items:
+          - 50여 시간 소규모 복습 강의를 진행. ER 다이어그램, SQL, JDBC, 정규화, 인덱싱, 등 주제를 다룸.
+          - 150여 시간 학생들을 일대일 지도. SQL, Java, JavaScript, C++ 프로젝트 디버깅을 도움.
+    skills: ["SQL", "Java", "Javascript", "C++"]

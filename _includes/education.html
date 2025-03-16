@@ -1,0 +1,16 @@
+<div class="education-container">
+  {% for degree in site.data.education[page.lang] %}
+  <div class="education-tile">
+    <h2 class="school-name">{{ degree.school }}</h2>
+    <p class="program">{{ degree.program }} - {{ degree.graduation_date }}</p>
+    <p class="education-description">{{ degree.description }}</p>
+    {% if degree.points %}
+    <ul>
+      {% for point in degree.points %}
+      <li>{{ point }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

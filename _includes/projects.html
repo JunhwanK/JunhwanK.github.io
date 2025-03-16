@@ -1,0 +1,44 @@
+<div class="project-container">
+  {% for project in site.data.projects[page.lang] %}
+  <div class="project-tile" id="{{ project.id }}">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.short_description }}</p>
+
+    <!-- Thumbnail and Bullet Points -->
+    <div class="project-content">
+      {% if project.thumbnail %}
+      <div class="project-thumbnail">
+        <img
+          src="{{ project.thumbnail }}"
+          alt="{{ project.title }} thumbnail"
+        />
+      </div>
+      {% endif %}
+
+      <div class="project-details">
+        <ul class="project-bullets">
+          {% for bullet in project.bullets %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="skills">
+      {% for skill in project.skills %}
+      <span class="skill">{{ skill }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="project-links">
+      {% if project.link %}
+      <a href="{{ project.link }}" class="project-link">View More</a>
+      {% endif %} {% if project.github %}
+      <a href="{{ project.github }}" class="github-link" target="_blank"
+        >GitHub</a
+      >
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

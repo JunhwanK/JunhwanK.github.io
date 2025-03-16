@@ -1,0 +1,133 @@
+en:
+  - title: Real-time Object Detection Surveillance Software
+    thumbnail: /assets/images/roka-surveillance/roka-surveillance-thumbnail.png
+    short_description: A surveillance software that performs object detection on live camera feeds.
+    bullets:
+      - Fine-tuned and added GUI to an object detection neural network.
+      - Increased frame throughput by 60% using multi-threading and multi-processing.
+      - Deployed the software across six army bases for user testing.
+    skills:
+      [
+        "Computer Vision",
+        "Object Detection",
+        "Pytorch",
+        "PyQt",
+        "UI/UX",
+        "Multi-Processing",
+      ]
+    id: roka-surveillance
+    link: /en/projects/roka-surveillance/
+
+  - title: Shoe Detection, Segmentation, and Stitching
+    thumbnail: /assets/images/shoes-stitching/thumbnail.png
+    short_description: A pipeline that overlays retailer shoes on top of user photos.
+    bullets:
+      - Used YOLOv3 for shoe detection.
+      - Used GrabCut with SIFT features convex hull for segmentation.
+      - Stitched retailer shoes on top of user images by applying similarity transformations based on shoe contours.
+    skills:
+      ["Computer Vision", "Object Segmentation", "Image Stitching", "Pytorch"]
+    id: shoes-stitching
+    link: /en/projects/shoes-stitching/
+    github: https://github.com/JunhwanK/Shoes-For-Life
+
+  - title: LSTM-based Classifier for Counter-Battery Radars
+    thumbnail: /assets/images/ballistic-projectile/thumbnail.png
+    short_description: A neural network for quick projectile classification in counter-battery radars.
+    bullets:
+      - Achieved 94.3% accuracy and 0.85 F1-score on real-world data collected by counter-battery radars.
+      - Patent granted (10-2641022) in Korea as property of the Republic of Korea Army.
+    skills: ["Pytorch", "Time Series", "Classification", "Patent-Granted"]
+    id: ballistic-projectile
+    link: /en/projects/ballistic-projectile/
+    github:
+
+  - title: Malicious Web Request Classification using NLP
+    # thumbnail: /assets/images/p2-thumbnail.png
+    # short_description: Implemented and trained a custom BERT model to classify web application firewall log entries.
+    bullets:
+      - Implemented and trained a custom four-layer BERT model on 45k web application firewall log entries, classifying them into one of nine classes of malicious activities.
+      - Achieved 85.6% accuracy and 0.90 macro F1-score by using a random forest classifier on top of BERT embeddings.
+    skills: ["Natural Language Processing", "Pytorch", "Classification"]
+    id: malicious-web-nlp
+    link: # /en/projects/malicious-web-nlp/
+    github:
+
+  - title: Multi-Vehicle Routing Algorithm [2nd Place]
+    thumbnail: /assets/images/vrp-algo/vrp-thumbnail.png
+    short_description: "A heuristic algorithm for computing simultaneous package delivery routes for multiple vehicles."
+    bullets:
+      - Won 2nd place (out of 103 teams) in the 2022 CJ Logistics Future Technology Challenge.
+      - Achieved the maximum possible delivery count on the competition dataset (37 vehicles, 1,805 packages).
+      - Decreased runtime by 20% using multi-threading, while maintaining deterministic results.
+    skills: ["C++", "Algorithm", "Multi-Threading"]
+    id: vrp-algo
+    link: /en/projects/vrp-algo/
+    github:
+
+kr:
+  - title: 실시간 객체탐지 경계 시스템
+    thumbnail: /assets/images/roka-surveillance/roka-surveillance-thumbnail.png
+    short_description: CCTV에 연결하여 실시간 객체탐지가 가능한 경계 시스템.
+    bullets:
+      - 군용 데이터를 학습한 객체탐지 모델에 GUI와 경계기능을 추가. 6개의 후방부대에 시험적용.
+      - 멀티스레딩 및 멀티프로세싱을 활용하여 초당 프레임 처리량을 60% 증가.
+    skills:
+      [
+        "Computer Vision",
+        "Object Detection",
+        "Pytorch",
+        "PyQt",
+        "UI/UX",
+        "Multi-Processing",
+      ]
+    id: roka-surveillance
+    link: /kr/projects/roka-surveillance/
+
+  - title: 신발 탐지, 세그멘테이션 및 덧씌우기
+    thumbnail: /assets/images/shoes-stitching/thumbnail.png
+    short_description: 사진 속 사용자의 신발 위에 쇼핑몰 신발을 자동으로 덧씌울 수 있는 파이프라인.
+    bullets:
+      - YOLOv3를 사용해 신발을 탐지.
+      - GrabCut을 사용하여 신발의 세그멘테이션을 추출.
+      - 신발 윤곽선을 활용한 similarity transform을 적용하여 사용자 이미지 위에 쇼핑몰 신발을 덧씌움.
+    skills:
+      ["Computer Vision", "Object Segmentation", "Image Stitching", "Pytorch"]
+    id: shoes-stitching
+    link: /kr/projects/shoes-stitching/
+    github: https://github.com/JunhwanK/Shoes-For-Life
+
+  - title: LSTM 기반 대포병탐지레이더 표적분류
+    thumbnail: /assets/images/ballistic-projectile/thumbnail.png
+    short_description: 대포병탐지레이더의 빠른 표적/비표적 분류를 돕기 위한 인공신경망.
+    bullets:
+      - 선행 연구를 재현하고 개선.
+      - 실제 포탄사격 데이터에서 94.3% 정확도와 0.85 F1 점수를 달성.
+      - "특허 등록번호: 10-2641022."
+    skills: ["Pytorch", "Time Series", "Classification", "특허"]
+    id: ballistic-projectile
+    link: /kr/projects/ballistic-projectile/
+    github:
+
+  - title: NLP를 활용한 악성 웹요청 분류
+    # thumbnail: /assets/images/p2-thumbnail.png
+    short_description: 악성 웹요청을 9개의 클래스 중 하나로 분류하는 인공신경망 모델.
+    bullets:
+      - BERT 모델을 구현하여 4.5만개의 악성 웹요청 로그에 학습.
+      - 학습한 BERT 임베딩에 랜덤 포레스트 분류기를 적용하여 85.6%의 정확도와 0.90 매크로 F1 점수를 달성.
+    skills: ["자연어처리", "Pytorch", "Classification"]
+    id: malicious-web-nlp
+    link: # /kr/projects/malicious-web-nlp/
+    github:
+
+  - title: 다중 차량 배송경로 알고리즘 [2등 수상]
+    thumbnail: /assets/images/vrp-algo/vrp-thumbnail.png
+    short_description: 제약조건을 만족시키면서 여러대 차량의 배송경로를 동시에 연산하는 휴리스틱 알고리즘.
+    bullets:
+      - 2등 수상 (103팀 참가) - CJ 대한통운 미래기술 챌린지 2022.
+      - 최대 주행가능 거리의 73.5%만을 사용하여 대회 데이터셋의 최대 배송 건수를 달성 (37대 차량, 1,805개 배송지).
+      - 멀티스레딩을 활용하여 런타임을 20% 단축하면서도 결정론적 결과를 유지.
+    skills: ["C++", "알고리즘", "Multi-Threading"]
+    id: vrp-algo
+    link: /kr/projects/vrp-algo/
+    github:
