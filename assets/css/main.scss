@@ -11,6 +11,10 @@ search: false
 
 // General Start
 
+.page__title {
+    display: none; // remove page title 
+}
+
 .page__content details {
     font-size: 0.9em;
 }
@@ -427,6 +431,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 1px solid #3d4144;
 }
 
 // .fluid-width-video-wrapper {

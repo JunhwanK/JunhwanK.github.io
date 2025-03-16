@@ -1,5 +1,5 @@
 ---
-title:
+title: Projects
 lang: en
 layout: single
 author_profile: true

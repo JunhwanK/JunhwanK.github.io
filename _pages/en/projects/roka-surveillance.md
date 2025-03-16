@@ -8,6 +8,8 @@ classes: wide
 github:
 ---
 
+# Real-time Object Detection Surveillance Software
+
 A surveillance software with real-time object detection capability.
 
 Developed as a prototype while working at the Center for Army Analysis and Simulation, Republic of Korea Army Headquarters.

@@ -117,7 +117,7 @@ kr:
       - 학습한 BERT 임베딩에 랜덤 포레스트 분류기를 적용하여 85.6%의 정확도와 0.90 매크로 F1 점수를 달성.
     skills: ["자연어처리", "Pytorch", "Classification"]
     id: malicious-web-nlp
-    link: # /kr/projects/malicious-web-nlp/
+    link: /kr/projects/malicious-web-nlp/
     github:
 
   - title: 다중 차량 배송경로 알고리즘 [2등 수상]

@@ -8,6 +8,8 @@ classes: wide
 github: https://github.com/JunhwanK/Shoes-For-Life
 ---
 
+# Shoe Detection, Segmentation, and Stitching
+
 A pipeline to automatically overlay retailer shoes onto user photos, helps users visualize how they would look in different retailer shoes. {% if page.github %} <a href="{{ page.github }}">View on GitHub</a> {% endif %}
 
 ## Key Highlights

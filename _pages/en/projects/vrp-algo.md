@@ -8,6 +8,8 @@ classes: wide
 github:
 ---
 
+# Constrained Multi-Vehicle Routing Algorithm
+
 A heuristic algorithm for computing multi-vehicle package delivery routes. {% if page.github %} <a href="{{ page.github }}">View on GitHub</a> {% endif %}
 
 ## Algorithm Visualization

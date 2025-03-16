@@ -8,6 +8,8 @@ classes: wide
 github:
 ---
 
+# LSTM-based Classifier for Counter-Battery Radars
+
 A neural network classifier to help counter-battery radars quickly distinguish between ballistic projectiles and other clutters (birds, airplanes, false detections, etc.).
 
 ## Key Highlights

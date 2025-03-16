@@ -119,7 +119,7 @@ author:
   kr:
     name: "김준환"
     avatar: "/assets/images/bio-photo.jpg"
-    bio: "미시간 대학 앤아버 - 석/학사 졸업"
+    bio: "미시간 대학 앤아버 - 학·석사 졸업"
   name:
   avatar: "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio:

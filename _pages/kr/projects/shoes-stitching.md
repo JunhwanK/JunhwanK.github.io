@@ -8,7 +8,9 @@ classes: wide
 github: https://github.com/JunhwanK/Shoes-For-Life
 ---
 
-사용자의 구매결정을 돕기위해 사진 속 사용자의 신발 위에 쇼핑몰 신발을 자동으로 덧씌울 수 있는 파이프라인을 설계. {% if page.github %} <a href="{{ page.github }}">[GitHub 링크]</a> {% endif %}
+# 신발 탐지, 세그멘테이션 및 덧씌우기
+
+사용자의 구매결정을 돕기 위해 사진 속 사용자의 신발 위에 쇼핑몰 신발을 자동으로 덧씌우는 파이프라인. {% if page.github %} <a href="{{ page.github }}">[GitHub 링크]</a> {% endif %}
 
 ## 주요 성과
 

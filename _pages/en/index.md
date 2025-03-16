@@ -1,5 +1,5 @@
 ---
-title:
+title: Experience & Education
 lang: en
 layout: single
 author_profile: true

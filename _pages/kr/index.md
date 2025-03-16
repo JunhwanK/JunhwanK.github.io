@@ -1,5 +1,5 @@
 ---
-title:
+title: Experience & Education
 lang: kr
 layout: single
 author_profile: true
