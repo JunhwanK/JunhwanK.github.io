@@ -1,6 +1,28 @@
 <div class="project-container">
+  <div id="tag-buttons">
+    {% if page.lang == "kr" %}
+    <span style="font-size: 1.15em; font-weight: bold">필터:</span>
+    {% else %}
+    <span style="font-size: 1.15em; font-weight: bold">Filters:</span>
+    {% endif %} {% assign all_tags = site.data.projects[page.lang] | map: "tags"
+    | uniq | sort %} {% if all_tags %} {% endif %} {% for tag in all_tags %}
+    <button class="tag-button" data-tag="{{ tag | strip }}">
+      {{ tag | strip }}
+    </button>
+    {% endfor %} {% if page.lang == "kr" %}
+    <button id="clear-tags">필터 초기화</button>
+    {% else %}
+    <button id="clear-tags">Reset Filters</button>
+    {% endif %}
+  </div>
+
   {% for project in site.data.projects[page.lang] %}
-  <div class="project-tile" id="{{ project.id }}">
+  <!-- prettier-ignore-attribute data-tags -->
+  <div
+    class="project-tile"
+    id="{{ project.id }}"
+    data-tags='{{ project.tags | jsonify }}'
+  >
     <h3>{{ project.title }}</h3>
     <p>{{ project.short_description }}</p>
 

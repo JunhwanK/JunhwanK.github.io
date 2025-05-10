@@ -1,0 +1,38 @@
+<script>
+  const buttons = document.querySelectorAll(".tag-button");
+  const clearButton = document.getElementById("clear-tags");
+  const posts = document.querySelectorAll(".project-tile");
+  let activeTags = new Set();
+
+  function updatePostVisibility() {
+    posts.forEach((post) => {
+      const postTags = JSON.parse(post.dataset.tags);
+      const matches = Array.from(activeTags).every((tag) =>
+        postTags.includes(tag)
+      );
+      post.style.display = activeTags.size === 0 || matches ? "block" : "none";
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const tag = button.dataset.tag;
+
+      if (activeTags.has(tag)) {
+        activeTags.delete(tag);
+        button.classList.remove("active");
+      } else {
+        activeTags.add(tag);
+        button.classList.add("active");
+      }
+
+      updatePostVisibility();
+    });
+  });
+
+  clearButton.addEventListener("click", () => {
+    activeTags.clear();
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    updatePostVisibility();
+  });
+</script>

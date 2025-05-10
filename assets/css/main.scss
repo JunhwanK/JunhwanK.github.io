@@ -246,6 +246,35 @@ figcaption {
 // Project End
 
 
+// Project filter buttons Start
+.tag-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.tag-button, #clear-tags {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    margin: 0.25em;
+    // padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.tag-button {
+    border-radius: 5px;
+    background: #f3f3f3;
+}
+
+.tag-button.active {
+    background-color: #007acc;
+    color: white;
+}
+
+// Project filter buttons End
+
+
 // Sidebar Start
 .sidebar {
     opacity: 1;
